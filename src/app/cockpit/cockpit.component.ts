@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cockpit.component.css']
 })
 export class CockpitComponent implements OnInit {
-  serverElements = [];
+    
   newServerName = '';
   newServerContent = '';
+
+
 onAddServer() {
     this.serverElements.push({
       type: 'server',
@@ -24,6 +26,7 @@ onAddServer() {
       content: this.newServerContent
     });
   }
+
   constructor() { }
 
   ngOnInit() {
