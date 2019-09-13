@@ -1,28 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'hello',
+  template: `<h1>Hello {{name}}!</h1>`,
+  styles: [`h1 { font-family: Lato; }`]
 })
-export class AppComponent {
-  serverElements = [];
-  newServerName = '';
-  newServerContent = '';
-
-  onAddServer() {
-    this.serverElements.push({
-      type: 'server',
-      name: this.newServerName,
-      content: this.newServerContent
-    });
-  }
-
-  onAddBlueprint() {
-    this.serverElements.push({
-      type: 'blueprint',
-      name: this.newServerName,
-      content: this.newServerContent
-    });
-  }
+export class HelloComponent  {
+  @Input() name: string;
 }
