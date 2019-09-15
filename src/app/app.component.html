@@ -3,8 +3,8 @@
 	<hr>
 	<div class="row">
 		<div class="col-xs-12">
-   		<app-cockpit (srvupdated)='onserveradd($event)'
-       (blueprintupdated)='onblueprintadd($event)'></app-cockpit>
+   		<app-cockpit (servercreated)='onserveradd($event)'
+       (blueprintcreated)='onblueprintadd($event)'></app-cockpit>
 			<app-server-element *ngFor="let serverElements of serverElement" [srvelement]="serverElements"></app-server-element>
 		</div>
 	</div>
