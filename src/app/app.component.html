@@ -3,8 +3,8 @@
 	<hr>
 	<div class="row">
 		<div class="col-xs-12">
-   		<app-cockpit></app-cockpit>
-			<app-server-element *ngFor="let serverElement of serverElement" [element]="serverElements"></app-server-element>
+   		<app-cockpit (srvupdateddata)='onAddServer'></app-cockpit>
+			<app-server-element *ngFor="let serverElements of serverElement" [srvelement]="serverElements"></app-server-element>
 		</div>
 	</div>
 </div>
