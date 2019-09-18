@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  serverElement = [{type:'server',name:'testserver',content:'sample test case'}];  
+  serverElement = [{type:'server',name:'',content:''}];  
+  badword: 'asshole';
 onserveradd(serverdata :{servername:string,servercontent:string}) {
     this.serverElement.push({
       type: 'server',
@@ -15,11 +16,11 @@ onserveradd(serverdata :{servername:string,servercontent:string}) {
     });
   }
 
-  onblueprintadd(blueprintdata :{servername:string,servercontent:string}) {
+  onblueprintadd(blueprintdat :{servername:string,servercontent:string}) {
     this.serverElement.push({
       type: 'blueprint',
-      name: blueprintdata.servername,
-      content: blueprintdata.servercontent    });
+      name: blueprintdat.servername,
+      content: blueprintdat.servercontent    });
   }
 
   
