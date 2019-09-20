@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   serverElement = [{type:'server',name:'',content:''}];  
-  badword: 'asshole';
 onserveradd(serverdata :{servername:string,servercontent:string}) {
     this.serverElement.push({
       type: 'server',
