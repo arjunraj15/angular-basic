@@ -21,6 +21,9 @@ onserveradd(serverdata :{servername:string,servercontent:string}) {
       name: blueprintdat.servername,
       content: blueprintdat.servercontent    });
   }
-
+ onChangeFirst()
+ {
+   
+ }
   
 }

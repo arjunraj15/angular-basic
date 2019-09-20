@@ -5,6 +5,7 @@
 		<div class="col-xs-12">
    		<app-cockpit (servercreated)='onserveradd($event)'
        (blueprintcreated)='onblueprintadd($event)'></app-cockpit>
+       <button class="btn btn-primary" (click)="onCgangeFirst"> change first ele</button>
 			<app-server-element *ngFor="let serverElements of serverElement" [srvelement]="serverElements">
            <p>
             <strong *ngIf="serverElements.type === 'server'" style="color: red">{{serverElements.content }}</strong>
