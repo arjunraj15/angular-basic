@@ -23,7 +23,7 @@ onserveradd(serverdata :{servername:string,servercontent:string}) {
   }
  onChangeFirst()
  {
-   
+   this.serverElement[0].name = 'changed';
  }
   
 }
